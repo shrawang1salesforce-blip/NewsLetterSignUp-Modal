@@ -53,23 +53,11 @@ button {
   color: var(--orange);
 }
 
-.issue-label,
-.site-footer,
-.small-note {
+.site-footer {
   color: var(--muted);
   font-size: 12px;
 }
 
-.text-button {
-  padding: 8px 0;
-  border: 0;
-  background: transparent;
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.text-button span,
 .join-button span {
   margin-left: 9px;
 }
@@ -132,10 +120,6 @@ h1 {
 
 .join-button:hover {
   background: #a83d27;
-}
-
-.small-note {
-  margin: 15px 0 0;
 }
 
 .cover-image {
@@ -256,10 +240,6 @@ h1 {
   font-size: 13px;
 }
 
-.modal-note {
-  margin-top: 8px;
-}
-
 @keyframes arrive {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -270,10 +250,6 @@ h1 {
   .site-footer {
     padding-right: 6vw;
     padding-left: 6vw;
-  }
-
-  .issue-label {
-    display: none;
   }
 
   .intro {

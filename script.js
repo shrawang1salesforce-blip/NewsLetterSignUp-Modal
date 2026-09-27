@@ -7,6 +7,7 @@ let previousFocus;
 
 function openModal() {
   previousFocus = document.activeElement;
+  formMessage.textContent = "";
   modal.hidden = false;
   emailInput.focus();
 }
@@ -21,7 +22,9 @@ document.querySelectorAll("[data-open-modal]").forEach((button) => {
   button.addEventListener("click", openModal);
 });
 
-document.querySelector("[data-close-modal]").addEventListener("click", closeModal);
+document
+  .querySelector("[data-close-modal]")
+  .addEventListener("click", closeModal);
 
 modal.addEventListener("click", (event) => {
   if (event.target === modal) closeModal();
