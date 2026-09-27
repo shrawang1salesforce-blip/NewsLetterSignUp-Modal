@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <title>The Sunday Letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="The Sunday Letter home">SL<span>.</span></a>
+    <span class="issue-label">A small note for your inbox</span>
+    <button class="text-button" type="button" data-open-modal>Join the list <span aria-hidden="true">&rarr;</span></button>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow">THE SUNDAY LETTER &nbsp; / &nbsp; NO. 01</p>
+        <h1 id="intro-title">A good read,<br>now and then.</h1>
+        <p class="intro-text">A short weekly note with things worth your time: a story, a good link, and something to think about over coffee.</p>
+        <button class="join-button" type="button" data-open-modal>Get the letter <span aria-hidden="true">&rarr;</span></button>
+        <p class="small-note">One email a week. Leave whenever.</p>
+      </div>
+      <figure class="cover-image">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1400&q=85" alt="A stack of well-loved books on a shelf">
+        <figcaption>GOOD THINGS, GATHERED SLOWLY</figcaption>
+      </figure>
+    </section>
+    <footer class="site-footer"><span>Independent notes, sent on Sundays.</span><span>Est. 2026</span></footer>
+  </main>
+
+  <div class="modal-backdrop" data-modal hidden>
+    <section class="signup-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <button class="close-button" type="button" data-close-modal aria-label="Close signup form">&times;</button>
+      <p class="eyebrow">A NOTE FROM US</p>
+      <h2 id="modal-title">Make room for a good read.</h2>
+      <p id="modal-description" class="modal-description">A thoughtful little email, once a week. No noise, no fuss.</p>
+      <form data-signup-form>
+        <label for="email">Your email address</label>
+        <div class="form-row">
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="join-button" type="submit">Sign me up <span aria-hidden="true">&rarr;</span></button>
+        </div>
+      </form>
+      <p class="form-message" data-form-message aria-live="polite"></p>
+      <p class="small-note modal-note">Free, always. Unsubscribe any time.</p>
+    </section>
+  </div>
+</body>
+</html>
